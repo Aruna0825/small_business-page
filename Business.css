@@ -1,0 +1,183 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 125%;
+  height: 125vh;
+  overflow: hidden;
+  background-color: lightblue;
+  cursor: no-drop;
+  background-image: url(cakes-img/bh.png);
+  overflow-x: hidden;
+}
+
+.content { 
+  position: absolute;
+  top: 27vh;
+  left: 10%;
+  width: 33%;
+}
+.content h1 {
+  font-size: 40px;
+  width: 500px;
+  text-shadow: 2px 2px 2px #000;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.content h2 {
+  font-size: 25px;
+  width: 500px;
+}
+
+hr {
+  margin-top: 10px;
+  width: 100px;
+  height: 6px;
+  background-color: black;
+}
+
+.content p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  width: 550px;
+  font-weight: bold;
+  
+}
+button {
+  margin-top: 20px;
+  background-color:azure;
+  border: none;
+  outline: none;
+  letter-spacing: .04em;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  width: 200px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.25s, color 0.33s; 
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(46, 100, 248);
+}
+
+button:active {
+  color: white;
+  background-color: rgb(56, 210, 95);
+}
+
+img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 650px;
+  height: 600px;
+  padding-right: 3px;
+  padding-left: -33px;
+  border: none;
+  border-style: solid;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  line-height: 70px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: lightblue;
+
+}
+.navbar ul{
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  padding: 30px;
+  cursor: pointer;
+  font-size: 20px;  
+}
+.navbar ul li:hover, .mobile_menu ul li:hover {
+  background: white;
+  cursor: pointer;
+}
+.navbar ul li:active {
+  opacity: 0.3;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.aru-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+
+
+
+
+/* for mobile view */
+.mobile_menu {
+  display: none;
+  height: 40px;
+  line-height: 40px;
+  background-color: magenta;
+}
+.monile_menu ul{
+  display: flex;
+  justify-content: center;
+}
+.mobile_menu ul li {
+  list-style: none;
+  padding: 0 5px 0 5px;
+}
+.mobile_menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width : 768px) {
+  .mobile_menu {
+    display: block;
+  }
+  .navbar ul {
+    display: none;
+  }
+  html {
+    font-size: 95%;
+  }
+
+  .menu-col, .about_row {
+    flex-wrap: wrap;
+    padding: 0 10px 0 10px;
+  }
+}
+@media screen and (max-width : 768px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+
+

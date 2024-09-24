@@ -1,0 +1,59 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  line-height: 70px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: lightblue;
+
+}
+.navbar ul{
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  padding: 30px;
+  cursor: pointer;
+  font-size: 20px;  
+}
+.navbar ul li:hover, .mobile_menu ul li:hover {
+  background: white;
+  cursor: pointer;
+}
+.navbar ul li:active {
+  opacity: 0.3;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.contact {
+  background-color: white;
+  color: black;
+  
+}
+.abc {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial; 
+  color: red;
+  padding-top: 200px;
+}
+.call, .email {
+  font-size: 20;
+  padding-top: -10px;
+  padding-bottom: -10px;
+}
+footer {
+  background-color: #005f73;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}

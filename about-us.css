@@ -1,0 +1,66 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  line-height: 70px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: lightblue;
+
+}
+.navbar ul{
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  padding: 30px;
+  cursor: pointer;
+  font-size: 20px;  
+}
+.navbar ul li:hover, .mobile_menu ul li:hover {
+  background: white;
+  cursor: pointer;
+}
+.navbar ul li:active {
+  opacity: 0.3;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.about {
+  background: black;
+  color: white;
+  padding: 15px 0 15px 0;
+}
+.section {
+  display: flex;
+  justify-content: center;
+}
+.about_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 100px 0 100px;
+}
+.about1 {
+  text-decoration: underline;
+  font-size:50;
+  font-weight: bold;
+  padding-top: 100px;
+}
+.about_col {
+  flex: 1;
+}
+.a1 {
+  font-size: 45px;
+}
+.a2, .a3 {
+  font-size: 25px;
+}
